@@ -20,22 +20,23 @@ mahasiswa = {
 "ipk": 3.75}
 }
 
-#1
-jumlah = 0
-total = 0
+#1 tampilkan mahasiswa yang ipk di atas 3. 5
+for x in mahasiswa: #untuk setiap elemen (x) di dict mahasiswa
+   if (mahasiswa[x]["ipk"]) > 3.5: 
+      print(mahasiswa[x]["nama"])
 
-for x in  mahasiswa:
-   jumlah = jumlah + (mahasiswa[x]["ipk"])
-   total = total +1
-   rata = jumlah / total
-   
-print(rata)
 
 #2
-for x in mahasiswa:
-   if (mahasiswa[x]["ipk"]) > 3.5:
-      print(mahasiswa[x]["nama"])
+jumlah = 0 #untuk menyimpan total ipk
+total = 0 #untuk menyimpan jumlah mahasiswa
+
+for x in  mahasiswa: #untuk setiap elemen (x) di dict mahasiswa
+   jumlah = jumlah + (mahasiswa[x]["ipk"]) 
+   total = total +1 #tambah ipk ke variabel jumlah
+   rata = jumlah / total #hitung rata rata 
+   
+print(rata)
       
-#3
+#3 menambahkan satu data 
 mahasiswa["A004"] = {"nama" : "Fildza", "prodi" : "Informatika", "ipk": 3.9}
 print(mahasiswa)

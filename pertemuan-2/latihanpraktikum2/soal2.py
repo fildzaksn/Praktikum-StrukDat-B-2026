@@ -6,11 +6,11 @@ mahasiswa = ("A001", "Budi", "Informatika")
 
 mahasiswa = ("A001", "Budi", "Informatika")
 
-#1 tampilkan nama mahasiswa
+#1 tampilkan nama mahasiswa dengan mengacu indeksnya
 print(mahasiswa[1])
 
-#2
-for x in mahasiswa:
+#2 
+for x in mahasiswa: #variabel x menyimpan masing masing elemen tuple pada setiap iterasi
     print(x)
 
 #3
