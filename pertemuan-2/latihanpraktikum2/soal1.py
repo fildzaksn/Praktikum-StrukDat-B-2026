@@ -33,5 +33,5 @@ for x in angka:
     rata = total / jumlah
 print("rata rata angka adalah", rata)
 
-
-
+#5tampilan seluruh isi setelah perubahan
+print(angka)
